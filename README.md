@@ -1,13 +1,28 @@
-# Among Us Emergency Button Blocker
+# Among Us Modding Collection
 
-A BepInEx mod for Among Us that prevents players from calling the emergency button during the first round of the game, helping to reduce trolling and improve gameplay experience.
+A comprehensive collection of BepInEx mods for Among Us that enhance gameplay, reduce trolling, and add new features to improve the overall experience.
 
-## Features
+## Available Mods
 
+### 🚫 Emergency Button Blocker
 - **First Round Protection**: Blocks emergency button calls during the first meeting
 - **Automatic Reset**: Resets for each new game
 - **Configurable**: Can be enabled/disabled via configuration
-- **Non-Intrusive**: Works seamlessly with existing gameplay
+
+### 🗳️ Vote Kick System
+- **Democratic Kicking**: Players can vote to kick toxic players
+- **Configurable Thresholds**: Set required votes and time limits
+- **Chat Commands**: Use `/votekick` or `/vk` commands
+
+### 🎭 Role Assignment System
+- **Custom Roles**: Sheriff, Medic, Engineer, Jester
+- **Balanced Gameplay**: Each role has unique abilities
+- **Configurable**: Enable/disable specific roles
+
+### 🛡️ Anti-Troll Tools
+- **Chat Filter**: Blocks inappropriate language and spam
+- **AFK Detection**: Automatically kicks inactive players
+- **Spam Protection**: Limits messages per minute per player
 
 ## Installation
 
