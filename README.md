@@ -24,6 +24,31 @@ A comprehensive collection of BepInEx mods for Among Us that enhance gameplay, r
 - **AFK Detection**: Automatically kicks inactive players
 - **Spam Protection**: Limits messages per minute per player
 
+### 📊 Task Progress Tracker
+- **Real-time Progress**: Shows task completion percentages
+- **Visual Display**: Progress bar and percentage indicators
+- **Chat Commands**: Use `/tasks` or `/progress` to check status
+
+### ⏰ Meeting Timer
+- **Phase Timers**: Separate timers for discussion and voting
+- **Visual Countdown**: On-screen timer display
+- **Auto-Transition**: Automatically moves between phases
+
+### 💀 Death Animation Customizer
+- **Custom Effects**: Personalized death animations and effects
+- **Sound Effects**: Custom death sounds and audio
+- **Particle Systems**: Enhanced visual death effects
+
+### 🚀 Auto-Ready System
+- **Smart Ready**: Automatically ready up when lobby is full
+- **Lobby Management**: Advanced ready state tracking
+- **Chat Commands**: Use `/ready`, `/unready`, `/readycount`
+
+### 📈 Statistics Tracker
+- **Comprehensive Stats**: Track wins, kills, tasks, play time
+- **Leaderboards**: Compare performance with other players
+- **Data Persistence**: Save statistics between games
+
 ## Installation
 
 1. **Install BepInEx** (if not already installed):
@@ -36,24 +61,61 @@ A comprehensive collection of BepInEx mods for Among Us that enhance gameplay, r
    - Place the DLL in `BepInEx/plugins/` folder
    - Launch Among Us
 
+## Project Structure
+
+```
+among-us-script/
+├── mods/
+│   ├── emergency-button-blocker/     # First round button protection
+│   ├── vote-kick-system/            # Democratic player kicking
+│   ├── role-assignment-system/      # Custom roles (Sheriff, Medic, etc.)
+│   ├── anti-troll-tools/            # Chat filter, AFK detection, spam protection
+│   ├── task-progress-tracker/       # Real-time task completion display
+│   ├── meeting-timer/               # Discussion and voting phase timers
+│   ├── death-animation-customizer/ # Custom death effects and sounds
+│   ├── auto-ready-system/           # Smart auto-ready with lobby management
+│   └── statistics-tracker/           # Player statistics and leaderboards
+├── shared/
+│   └── CommonUtilities.cs           # Shared utilities for all mods
+└── README.md                        # This documentation
+```
+
 ## How It Works
 
-The mod uses Harmony patches to intercept emergency button calls:
+Each mod uses Harmony patches to intercept and modify game behavior:
 
-- **EmergencyButtonPatch**: Blocks `CmdReportDeadBody` calls during the first round
-- **MeetingStartPatch**: Tracks when the first meeting occurs
-- **GameStartPatch**: Resets the blocker for new games
+- **Harmony Patches**: Runtime method interception and modification
+- **BepInEx Framework**: Plugin loading and configuration management
+- **Shared Utilities**: Common functions used across all mods
+- **Configuration**: Individual settings for each mod
 
 ## Configuration
 
-The mod creates a configuration file at `BepInEx/config/com.yourname.emergencybuttonblocker.cfg`:
+Each mod creates its own configuration file in `BepInEx/config/`:
 
+- `com.yourname.emergencybuttonblocker.cfg` - Emergency Button Blocker settings
+- `com.yourname.votekicksystem.cfg` - Vote Kick System settings  
+- `com.yourname.roleassignmentsystem.cfg` - Role Assignment settings
+- `com.yourname.antitrolltools.cfg` - Anti-Troll Tools settings
+- `com.yourname.taskprogresstracker.cfg` - Task Progress settings
+- `com.yourname.meetingtimer.cfg` - Meeting Timer settings
+- `com.yourname.deathanimationcustomizer.cfg` - Death Animation settings
+- `com.yourname.autoreadysystem.cfg` - Auto-Ready settings
+- `com.yourname.statisticstracker.cfg` - Statistics settings
+
+Example configuration:
 ```ini
 [General]
-## Enable/disable the emergency button blocker
+## Enable/disable the mod
 # Setting type: Boolean
 # Default value: true
 Enabled = true
+
+[UI]
+## Show visual elements
+# Setting type: Boolean
+# Default value: true
+ShowUI = true
 ```
 
 ## Building from Source
@@ -71,12 +133,24 @@ Enabled = true
 - **BepInEx Version**: 5.4.21 or later
 - **Platform**: Windows (Steam/Epic Games)
 
+## Chat Commands
+
+Many mods include chat commands for enhanced functionality:
+
+- `/votekick <player>` or `/vk <player>` - Vote to kick a player
+- `/tasks` or `/progress` - Check your task progress
+- `/timer` or `/time` - Show meeting time remaining
+- `/ready`, `/unready`, `/readycount` - Manage ready states
+- `/stats` or `/statistics` - View your statistics
+- `/leaderboard` or `/lb` - Show player leaderboard
+
 ## Notes
 
-- This mod only affects the host's game
-- All players in the lobby will have the emergency button blocked during the first round
-- The mod automatically resets when a new game starts
-- Emergency button calls are logged for debugging purposes
+- Most mods only affect the host's game
+- All players in the lobby will benefit from the mods
+- Mods automatically reset when a new game starts
+- All actions are logged for debugging purposes
+- Use `/help` in-game to see available commands
 
 ## Troubleshooting
 
