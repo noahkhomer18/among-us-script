@@ -6,7 +6,7 @@
 ![BepInEx](https://img.shields.io/badge/BepInEx-5.4.21-blue?style=for-the-badge)
 ![License](https://img.shields.io/badge/License-Educational-green?style=for-the-badge)
 
-**A comprehensive collection of 17 BepInEx mods for Among Us that enhance gameplay, reduce trolling, and add exciting new features to improve the overall experience.**
+**A comprehensive collection of 21 BepInEx mods for Among Us that enhance gameplay, reduce trolling, and add exciting new features to improve the overall experience.**
 
 [🚀 Quick Start](#-quick-start) • [📋 All Mods](#-all-mods) • [⚙️ Installation](#️-installation) • [🎯 Features](#-features)
 
@@ -35,6 +35,12 @@
 - **Replay System** - Game recording and playback
 - **Player Behavior Analytics** - Advanced behavior tracking
 
+### 🎬 **Content Creation** ⭐ **NEW!**
+- **Replay Editor** - Advanced replay editing and customization
+- **Screenshot System** - Automated screenshot capture and management
+- **Video Recording Integration** - Comprehensive gameplay recording
+- **Stream Overlay Integration** - Professional streaming features and overlays
+
 ### 🎨 **Customization & UI**
 - **UI Customizer** - Themes, colors, and scaling
 - **Custom Map Loader** - Map management and custom maps
@@ -43,13 +49,13 @@
 
 ## 📋 All Mods
 
-| 🛡️ **Anti-Trolling & Moderation** | 🎭 **Gameplay Enhancement** | 📊 **Analytics & Recording** | 🎨 **Customization & UI** |
-|:---:|:---:|:---:|:---:|
-| 🚫 Emergency Button Blocker | 🎭 Role Assignment System | 📈 Statistics Tracker | 🎨 UI Customizer |
-| 🗳️ Vote Kick System | 📊 Task Progress Tracker | 🎬 Replay System | 🗺️ Custom Map Loader |
-| 🛡️ Anti-Troll Tools | ⏰ Meeting Timer | 📊 Player Behavior Analytics | 🎤 Voice Chat Integration |
-| ⚙️ Admin Panel | 💀 Death Animation Customizer | | 💾 Lobby Settings Presets |
-| 🛡️ Anti-Cheat System | 🚀 Auto-Ready System | | |
+| 🛡️ **Anti-Trolling & Moderation** | 🎭 **Gameplay Enhancement** | 📊 **Analytics & Recording** | 🎬 **Content Creation** | 🎨 **Customization & UI** |
+|:---:|:---:|:---:|:---:|:---:|
+| 🚫 Emergency Button Blocker | 🎭 Role Assignment System | 📈 Statistics Tracker | 🎬 Replay Editor | 🎨 UI Customizer |
+| 🗳️ Vote Kick System | 📊 Task Progress Tracker | 🎬 Replay System | 📸 Screenshot System | 🗺️ Custom Map Loader |
+| 🛡️ Anti-Troll Tools | ⏰ Meeting Timer | 📊 Player Behavior Analytics | 🎥 Video Recording | 🎤 Voice Chat Integration |
+| ⚙️ Admin Panel | 💀 Death Animation Customizer | | 📺 Stream Overlay | 💾 Lobby Settings Presets |
+| 🛡️ Anti-Cheat System | 🚀 Auto-Ready System | | | |
 
 ---
 
@@ -200,6 +206,18 @@ ShowUI = true
 | `/playreplay <id>` | Play a replay | Replay System |
 | `/anticheat` | Show anti-cheat status | Anti-Cheat System |
 
+### 🎬 **Content Creation Commands** ⭐ **NEW!**
+| Command | Description | Mod |
+|:---:|:---:|:---:|
+| `/screenshot` or `/ss` | Take screenshot | Screenshot System |
+| `/screenshots` | Show screenshot list | Screenshot System |
+| `/record` or `/rec` | Start/pause recording | Video Recording |
+| `/stop` | Stop recording | Video Recording |
+| `/overlay` | Toggle stream overlay | Stream Overlay |
+| `/streamalert` | Show test alert | Stream Overlay |
+| `/replay` | Show replay list | Replay Editor |
+| `/edit <id>` | Edit replay (host only) | Replay Editor |
+
 ---
 
 ## 📁 Project Structure
@@ -223,7 +241,11 @@ among-us-script/
 │   ├── 🎨 ui-customizer/               # Themes, colors, and UI scaling
 │   ├── ⚙️ admin-panel/                # Advanced host controls and permissions
 │   ├── 🛡️ anti-cheat-system/          # Comprehensive cheat detection
-│   └── 💾 lobby-settings-presets/      # Save/load lobby configurations
+│   ├── 💾 lobby-settings-presets/      # Save/load lobby configurations
+│   ├── 🎬 replay-editor/              # Advanced replay editing ⭐ NEW!
+│   ├── 📸 screenshot-system/           # Automated screenshot capture ⭐ NEW!
+│   ├── 🎥 video-recording-integration/ # Comprehensive gameplay recording ⭐ NEW!
+│   └── 📺 stream-overlay-integration/  # Professional streaming features ⭐ NEW!
 ├── 📁 shared/
 │   └── 🔧 CommonUtilities.cs           # Shared utilities for all mods
 └── 📄 README.md                        # This documentation
