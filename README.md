@@ -271,7 +271,7 @@ among-us-script/
 
 ---
 
-### 🌟 **Star this repository if you found it helpful!**
+### 🌟 **Star this repository if you found it helpful! and be sure to follow me if you appreciate the work**
 
 [![GitHub stars](https://img.shields.io/github/stars/noahkhomer18/among-us-script?style=social)](https://github.com/noahkhomer18/among-us-script)
 [![GitHub forks](https://img.shields.io/github/forks/noahkhomer18/among-us-script?style=social)](https://github.com/noahkhomer18/among-us-script)
