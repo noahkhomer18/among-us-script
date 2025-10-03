@@ -6,7 +6,7 @@
 ![BepInEx](https://img.shields.io/badge/BepInEx-5.4.21-blue?style=for-the-badge)
 ![License](https://img.shields.io/badge/License-Educational-green?style=for-the-badge)
 
-**A comprehensive collection of 21 BepInEx mods for Among Us that enhance gameplay, reduce trolling, and add exciting new features to improve the overall experience.**
+**A comprehensive collection of 23 BepInEx mods for Among Us that enhance gameplay, reduce trolling, and add exciting new features to improve the overall experience.**
 
 [🚀 Quick Start](#-quick-start) • [📋 All Mods](#-all-mods) • [⚙️ Installation](#️-installation) • [🎯 Features](#-features)
 
@@ -47,15 +47,21 @@
 - **Voice Chat Integration** - Proximity-based voice chat
 - **Lobby Settings Presets** - Save/load configurations
 
+### 🌍 **Internationalization** ⭐ **NEW!**
+- **Translation System** - Multi-language support with real-time translation
+
+### 📊 **Performance & Monitoring** ⭐ **NEW!**
+- **Performance Monitor** - FPS tracking, memory usage, and system performance metrics
+
 ## 📋 All Mods
 
-| 🛡️ **Anti-Trolling & Moderation** | 🎭 **Gameplay Enhancement** | 📊 **Analytics & Recording** | 🎬 **Content Creation** | 🎨 **Customization & UI** |
-|:---:|:---:|:---:|:---:|:---:|
-| 🚫 Emergency Button Blocker | 🎭 Role Assignment System | 📈 Statistics Tracker | 🎬 Replay Editor | 🎨 UI Customizer |
-| 🗳️ Vote Kick System | 📊 Task Progress Tracker | 🎬 Replay System | 📸 Screenshot System | 🗺️ Custom Map Loader |
-| 🛡️ Anti-Troll Tools | ⏰ Meeting Timer | 📊 Player Behavior Analytics | 🎥 Video Recording | 🎤 Voice Chat Integration |
-| ⚙️ Admin Panel | 💀 Death Animation Customizer | | 📺 Stream Overlay | 💾 Lobby Settings Presets |
-| 🛡️ Anti-Cheat System | 🚀 Auto-Ready System | | | |
+| 🛡️ **Anti-Trolling & Moderation** | 🎭 **Gameplay Enhancement** | 📊 **Analytics & Recording** | 🎬 **Content Creation** | 🎨 **Customization & UI** | 🌍 **Internationalization** | 📊 **Performance & Monitoring** |
+|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+| 🚫 Emergency Button Blocker | 🎭 Role Assignment System | 📈 Statistics Tracker | 🎬 Replay Editor | 🎨 UI Customizer | 🌍 Translation System | 📊 Performance Monitor |
+| 🗳️ Vote Kick System | 📊 Task Progress Tracker | 🎬 Replay System | 📸 Screenshot System | 🗺️ Custom Map Loader | | |
+| 🛡️ Anti-Troll Tools | ⏰ Meeting Timer | 📊 Player Behavior Analytics | 🎥 Video Recording | 🎤 Voice Chat Integration | | |
+| ⚙️ Admin Panel | 💀 Death Animation Customizer | | 📺 Stream Overlay | 💾 Lobby Settings Presets | | |
+| 🛡️ Anti-Cheat System | 🚀 Auto-Ready System | | | | | |
 
 ---
 
@@ -218,6 +224,20 @@ ShowUI = true
 | `/replay` | Show replay list | Replay Editor |
 | `/edit <id>` | Edit replay (host only) | Replay Editor |
 
+### 🌍 **Translation Commands** ⭐ **NEW!**
+| Command | Description | Mod |
+|:---:|:---:|:---:|
+| `/lang <code>` | Change language | Translation System |
+| `/lang` | Show available languages | Translation System |
+| `/translate <text>` | Translate text | Translation System |
+
+### 📊 **Performance Commands** ⭐ **NEW!**
+| Command | Description | Mod |
+|:---:|:---:|:---:|
+| `/fps` | Show FPS statistics | Performance Monitor |
+| `/perf` | Show performance report | Performance Monitor |
+| `/stats` | Show performance statistics | Performance Monitor |
+
 ---
 
 ## 📁 Project Structure
@@ -245,7 +265,9 @@ among-us-script/
 │   ├── 🎬 replay-editor/              # Advanced replay editing ⭐ NEW!
 │   ├── 📸 screenshot-system/           # Automated screenshot capture ⭐ NEW!
 │   ├── 🎥 video-recording-integration/ # Comprehensive gameplay recording ⭐ NEW!
-│   └── 📺 stream-overlay-integration/  # Professional streaming features ⭐ NEW!
+│   ├── 📺 stream-overlay-integration/  # Professional streaming features ⭐ NEW!
+│   ├── 🌍 translation-system/         # Multi-language support ⭐ NEW!
+│   └── 📊 performance-monitor/          # Performance tracking and monitoring ⭐ NEW!
 ├── 📁 shared/
 │   └── 🔧 CommonUtilities.cs           # Shared utilities for all mods
 └── 📄 README.md                        # This documentation
