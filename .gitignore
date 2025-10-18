@@ -1,0 +1,35 @@
+# BepInEx
+BepInEx/
+*.dll
+*.pdb
+
+# Visual Studio
+.vs/
+bin/
+obj/
+*.user
+*.suo
+*.cache
+*.log
+
+# Unity
+Library/
+Temp/
+Logs/
+*.tmp
+*.meta
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Build outputs
+*.zip
+*.rar
+*.7z
