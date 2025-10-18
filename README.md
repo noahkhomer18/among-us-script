@@ -53,15 +53,20 @@
 ### 📊 **Performance & Monitoring** ⭐ **NEW!**
 - **Performance Monitor** - FPS tracking, memory usage, and system performance metrics
 
+### 🎮 **Chaotic Game Modes** ⭐ **NEW!**
+- **The Guesser** - No imposters, one fake crewmate, crew must identify the fake or lose
+- **Relaxed Crew** - All crewmates, emergency button every 1:30, vote out = tasks completed
+- **Speed Role** - One player has flash speed while others are normal speed
+
 ## 📋 All Mods
 
-| 🛡️ **Anti-Trolling & Moderation** | 🎭 **Gameplay Enhancement** | 📊 **Analytics & Recording** | 🎬 **Content Creation** | 🎨 **Customization & UI** | 🌍 **Internationalization** | 📊 **Performance & Monitoring** |
-|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-| 🚫 Emergency Button Blocker | 🎭 Role Assignment System | 📈 Statistics Tracker | 🎬 Replay Editor | 🎨 UI Customizer | 🌍 Translation System | 📊 Performance Monitor |
-| 🗳️ Vote Kick System | 📊 Task Progress Tracker | 🎬 Replay System | 📸 Screenshot System | 🗺️ Custom Map Loader | | |
-| 🛡️ Anti-Troll Tools | ⏰ Meeting Timer | 📊 Player Behavior Analytics | 🎥 Video Recording | 🎤 Voice Chat Integration | | |
-| ⚙️ Admin Panel | 💀 Death Animation Customizer | | 📺 Stream Overlay | 💾 Lobby Settings Presets | | |
-| 🛡️ Anti-Cheat System | 🚀 Auto-Ready System | | | | | |
+| 🛡️ **Anti-Trolling & Moderation** | 🎭 **Gameplay Enhancement** | 📊 **Analytics & Recording** | 🎬 **Content Creation** | 🎨 **Customization & UI** | 🌍 **Internationalization** | 📊 **Performance & Monitoring** | 🎮 **Chaotic Game Modes** |
+|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+| 🚫 Emergency Button Blocker | 🎭 Role Assignment System | 📈 Statistics Tracker | 🎬 Replay Editor | 🎨 UI Customizer | 🌍 Translation System | 📊 Performance Monitor | 🎯 The Guesser |
+| 🗳️ Vote Kick System | 📊 Task Progress Tracker | 🎬 Replay System | 📸 Screenshot System | 🗺️ Custom Map Loader | | | 🌅 Relaxed Crew |
+| 🛡️ Anti-Troll Tools | ⏰ Meeting Timer | 📊 Player Behavior Analytics | 🎥 Video Recording | 🎤 Voice Chat Integration | | | ⚡ Speed Role |
+| ⚙️ Admin Panel | 💀 Death Animation Customizer | | 📺 Stream Overlay | 💾 Lobby Settings Presets | | | |
+| 🛡️ Anti-Cheat System | 🚀 Auto-Ready System | | | | | | |
 
 ---
 
@@ -238,6 +243,19 @@ ShowUI = true
 | `/perf` | Show performance report | Performance Monitor |
 | `/stats` | Show performance statistics | Performance Monitor |
 
+### 🎮 **Chaotic Game Mode Commands** ⭐ **NEW!**
+| Command | Description | Mod |
+|:---:|:---:|:---:|
+| `/guesser` | Check your role in Guesser mode | The Guesser |
+| `/tasks` | Show task progress in Guesser mode | The Guesser |
+| `/relaxed` | Check Relaxed Crew status | Relaxed Crew |
+| `/progress` | Show task progress in Relaxed Crew | Relaxed Crew |
+| `/nextemergency` | Show time until next emergency | Relaxed Crew |
+| `/strategy` | Show strategy tips for Relaxed Crew | Relaxed Crew |
+| `/speed` | Check speed status | Speed Role |
+| `/speedstatus` | Show speed player status | Speed Role |
+| `/speedhelp` | Show speed role commands | Speed Role |
+
 ---
 
 ## 📁 Project Structure
@@ -267,7 +285,10 @@ among-us-script/
 │   ├── 🎥 video-recording-integration/ # Comprehensive gameplay recording ⭐ NEW!
 │   ├── 📺 stream-overlay-integration/  # Professional streaming features ⭐ NEW!
 │   ├── 🌍 translation-system/         # Multi-language support ⭐ NEW!
-│   └── 📊 performance-monitor/          # Performance tracking and monitoring ⭐ NEW!
+│   ├── 📊 performance-monitor/          # Performance tracking and monitoring ⭐ NEW!
+│   ├── 🎯 the-guesser/                # No imposters, one fake crewmate ⭐ NEW!
+│   ├── 🌅 relaxed-crew/                # All crewmates, emergency every 1:30 ⭐ NEW!
+│   └── ⚡ speed-role/                  # One player has flash speed ⭐ NEW!
 ├── 📁 shared/
 │   └── 🔧 CommonUtilities.cs           # Shared utilities for all mods
 └── 📄 README.md                        # This documentation
